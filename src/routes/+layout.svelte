@@ -3,4 +3,6 @@
 	let { children } = $props();
 </script>
 
-{@render children()}
+<div class="prose prose-slate lg:prose-xl">
+	{@render children()}
+</div>
