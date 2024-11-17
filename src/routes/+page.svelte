@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Readme from './readme.md';
+	import Readme from '$lib/md/readme.md';
 </script>
 
 <Readme />
