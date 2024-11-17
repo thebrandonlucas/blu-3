@@ -4,7 +4,7 @@
 	let { children } = $props();
 </script>
 
-<div class="prose text-black marker:text-black">
+<div class="prose mx-auto flex flex-col gap-12">
 	<Nav />
 	{@render children()}
 </div>
