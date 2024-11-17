@@ -18,7 +18,7 @@
 }
 
 body {
-  @apply font-garamond;
+  @apply font-garamond prose-xl;
   /*background-color: #f2d7ac;*/
   background-color: black;
 }

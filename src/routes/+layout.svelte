@@ -4,7 +4,9 @@
 	let { children } = $props();
 </script>
 
-<div class="prose mx-auto flex flex-col gap-12">
+<main class="prose prose-2xl mx-auto flex flex-col gap-12 px-4">
 	<Nav />
-	{@render children()}
-</div>
+	<div>
+		{@render children()}
+	</div>
+</main>
