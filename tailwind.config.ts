@@ -21,6 +21,7 @@ export default {
             h4: { color: 'white' },
             em: { color: 'white' },
             p: { color: 'white' },
+            a: { color: 'white', 'text-decoration': 'none', '&:hover': { color: 'hsl(50, 90%, 67%)',  }, transition: 'color 0.3s ease, transform 0.3s ease'},
             hr: { 'border-color': 'white' }
           }
         }
