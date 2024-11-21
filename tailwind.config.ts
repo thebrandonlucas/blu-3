@@ -1,6 +1,8 @@
 import typography from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
 
+const tufteWhite = '#fffff8';
+
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
 
@@ -13,16 +15,16 @@ export default {
       typography: {
         DEFAULT: {
           css: {
-            color: 'white',
-            blockquote: { 'border-inline-start-color': 'white' },
-            h1: { color: 'white' },
-            h2: { color: 'white' },
-            h3: { color: 'white' },
-            h4: { color: 'white' },
-            em: { color: 'white' },
-            p: { color: 'white' },
-            a: { color: 'white', 'text-decoration': 'none', '&:hover': { color: 'hsl(50, 90%, 67%)',  }, transition: 'color 0.3s ease, transform 0.3s ease'},
-            hr: { 'border-color': 'white' }
+            color: tufteWhite,
+            blockquote: { 'border-inline-start-color': tufteWhite },
+            h1: { color: tufteWhite },
+            h2: { color: tufteWhite },
+            h3: { color: tufteWhite },
+            h4: { color: tufteWhite },
+            em: { color: tufteWhite },
+            p: { color: tufteWhite },
+            a: { color: tufteWhite, '&:hover': { color: 'hsl(50, 90%, 67%)',  }, transition: 'color 0.3s ease, transform 0.3s ease'},
+            hr: { 'border-color': tufteWhite }
           }
         }
       }
