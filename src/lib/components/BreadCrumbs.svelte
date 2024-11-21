@@ -12,7 +12,7 @@
 		}, []);
 	}
 
-	let crumbs = getCrumbs($page.url);
+	let crumbs = $derived(getCrumbs($page.url));
 </script>
 
 <div class="flex gap-2">
