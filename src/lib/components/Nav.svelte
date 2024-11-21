@@ -17,3 +17,9 @@
 		<a href="/about/contact">Contact</a>
 	{/if}
 </nav>
+
+<style lang="postcss">
+	a {
+		@apply font-bold;
+	}
+</style>

@@ -15,8 +15,8 @@
 	let crumbs = $derived(getCrumbs($page.url));
 </script>
 
-<div class="flex gap-2">
-	<a href="/">blu</a>
+<div class="flex items-center gap-2">
+	<a href="/"><img class="w-6" src="./images/narsil-logo-white-nobg.png" alt="blu" /></a>
 	{#each crumbs as { href, name }}
 		/ <a {href}>{name}</a>
 	{/each}
