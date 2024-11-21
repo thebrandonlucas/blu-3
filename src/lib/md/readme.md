@@ -1,16 +1,2 @@
-# Hello
+Welcome! I'm __Brandon Lucas__. I'm interested in a wide variety of things, but focus on [Bitcoin](https://bitcoin.org/en/) and [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software), and try to read and write on other topics like history when I can. 
 
-This is a test readme file
-What more can be said?
-
-> What more can be done?
-
----
-
-_in_ the ***end***, tis but a passing *thing*
-
-- a 
-- b 
-- c
-
-<aside class="text-blue-500">987cfbbb-cb31-483d-9505-9d5490aa5d91</aside>
