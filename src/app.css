@@ -19,8 +19,8 @@
 
 body {
   @apply font-garamond prose-xl;
-  /*background-color: #f2d7ac;*/
-  background-color: black;
+  color: #fffff8;
+  background-color: #111111;
 }
 
 h1 {
