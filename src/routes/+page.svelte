@@ -6,20 +6,28 @@
 	import { metadata } from '$lib/md/readme.md';
 	import { onMount, type Component } from 'svelte';
 
-	const articles = import.meta.glob('../lib/md/articles/*', { eager: true });
-	const blogs = import.meta.glob('../lib/md/blogs/testblog.md', { eager: true });
+	// First value in array is filename, second is metadata
+	const articles = Object.entries(import.meta.glob('../lib/md/articles/*', { eager: true }));
+	//const blogs = import.meta.glob('../lib/md/blogs/testblog.md', { eager: true });
+	//
 
-	const p = '$lib/md';
-	let md;
+	let md: MarkdownFile;
 	onMount(async () => {
-		md = await import(p);
-		console.log({ md });
+		const [name, metadata] = articles[1];
+		md = await import(name);
+		console.log({ name, metadata, md });
 	});
 </script>
 
 <Quote></Quote>
 
-{#each Object.entries(mdFiles) as [other, f]}
+{#if md}
+	<svelte:component this={md.default} />
+{:else}
+	<p>no</p>
+{/if}
+<!-- {#each Object.entries(mdFiles) as [other, f]}
 	{JSON.stringify(other)}
 	<svelte:component this={f} />
 {/each}
+-->

@@ -12,13 +12,13 @@ declare global {
 }
 
 declare module '*.md' {
-  const content: any;
+  const default: any;
   const metadata: any;
-  export default content;
+  export default default;
   export { metadata };
 }
 
 type MarkdownFile = {
-  const content: any;
-  const metadata: any;
+  const default: any; // content
+  const metadata: any; // metadata
 }
