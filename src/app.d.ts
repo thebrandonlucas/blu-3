@@ -13,6 +13,7 @@ declare global {
 
 declare module '*.md' {
   const content: any;
+  const metadata: any;
   export default content;
+  export { metadata };
 }
-
