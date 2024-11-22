@@ -71,9 +71,12 @@
 </script>
 
 {#if mdFiles}
-	{#each mdFiles as f}
-		<f.file.default></f.file.default>
+	{#each mdFiles as f, i}
+		{#if i < (numVisible || Infinity)}
+			<f.file.default></f.file.default>
+		{/if}
 	{/each}
 {:else}
+	<!-- TODO: do we need a loading spinner? -->
 	no files
 {/if}

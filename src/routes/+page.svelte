@@ -10,7 +10,7 @@
 
 <Quote></Quote>
 
-<Posts numVisible={1} directory={rawArticles}></Posts>
+<Posts numVisible={5} directory={rawArticles}></Posts>
 <!-- {#each Object.entries(mdFiles) as [other, f]}
 	{JSON.stringify(other)}
 	<svelte:component this={f} />
