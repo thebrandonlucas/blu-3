@@ -23,7 +23,10 @@ export default {
             h4: { color: tufteWhite },
             em: { color: tufteWhite },
             p: { color: tufteWhite },
+            i: { color: tufteWhite },
             strong: { color: tufteWhite },
+            blockquote: { color: tufteWhite },
+            span: { color: tufteWhite },
             a: { color: tufteWhite, '&:hover': { color: 'hsl(50, 90%, 67%)',  }, transition: 'color 0.3s ease, transform 0.3s ease'},
             hr: { 'border-color': tufteWhite }
           }
