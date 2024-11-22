@@ -1,4 +1,5 @@
 ---
+title: readme
 author: Brandon Lucas 
 date: 2021-01-01
 ---
@@ -14,8 +15,9 @@ On this site you'll find:
 Here's a preview of some of the main stuff:
 
 ### Articles
-...
+[Voltage for Developers - Bitcoin Core Mutinynet]()
+[Payjoin for a Better Bitcoin Future]()
+[Micropayments and the Lightning Network]()
 
 ### Blog Posts
-...
 
