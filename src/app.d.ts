@@ -17,3 +17,8 @@ declare module '*.md' {
   export default content;
   export { metadata };
 }
+
+type MarkdownFile = {
+  const content: any;
+  const metadata: any;
+}

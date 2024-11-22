@@ -2,5 +2,20 @@
 author: Brandon Lucas 
 date: 2021-01-01
 ---
-Welcome! I'm __Brandon Lucas__. I'm interested in a wide variety of things, but focus on [Bitcoin](https://bitcoin.org/en/) and [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software), and try to read and write on other topics like history when I can. 
+
+Welcome! I'm __Brandon Lucas__. I'm interested in [Bitcoin](https://bitcoin.org/en/) and other [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) and am usually building things, but also love to read and write when I can.
+
+On this site you'll find:
+
+- [__Words__](/words): A collection of longer-form articles, shorter-form blogs, quotes I like, books I recommend (and perhaps some reviews later), rough "sketches" of thoughts or ideas, websites, tools, and applications I like, etc. Here be the "meat" of the site.
+- [__Work__](/work): Projects I've worked on or am still working on, primarily a collection of open source contributions.
+- [__About__](/about): Learn a bit more about me, contact info, donation portal, etc.
+
+Here's a preview of some of the main stuff:
+
+### Articles
+...
+
+### Blog Posts
+...
 
