@@ -7,7 +7,11 @@ tags: []
 ---
 
 <script lang="ts">
-  import Quote from '$lib/components/Quote.svelte'
+  import Quote from '$lib/components/Quote.svelte';
+  import Posts from '$lib/components/Posts.svelte';
+  import type { MarkdownFileMetadata } from '$lib/types';
+
+  let { articles , blog }: { articles: MarkdownFileMetadata[], blog: MarkdownFileMetadata[] } = $props();
 </script>
 
 <Quote></Quote>
@@ -22,4 +26,6 @@ On this site you'll find:
 
 Here's a preview of some of the main stuff:
 
-
+  
+<Posts posts={articles} sectionTitle="Articles" pathPrefix="/words/articles"></Posts>
+<Posts posts={blog} sectionTitle="Articles" pathPrefix="/words/blog"></Posts>

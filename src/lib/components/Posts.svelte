@@ -4,12 +4,14 @@
 
 	let {
 		posts,
-		pathPrefix
+		pathPrefix,
+		sectionTitle
 		// TODO:: sortBy descending on specified key (date by default)
 		//sortBy = 'descending'
 	}: {
 		posts: MarkdownFileMetadata[];
 		pathPrefix: string;
+		sectionTitle?: string;
 		//sortBy: 'descending' | 'ascending';
 	} = $props();
 
@@ -24,6 +26,9 @@
 </script>
 
 {#if files}
+	{#if sectionTitle}
+		<h2>{sectionTitle}</h2>
+	{/if}
 	{#each files as f}
 		<div class="flex flex-col gap-4">
 			<div>

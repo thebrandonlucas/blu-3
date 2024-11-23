@@ -16,7 +16,7 @@ export default {
         DEFAULT: {
           css: {
             color: tufteWhite,
-            blockquote: { 'border-inline-start-color': tufteWhite },
+            blockquote: { color: tufteWhite, 'border-inline-start-color': tufteWhite },
             h1: { color: tufteWhite },
             h2: { color: tufteWhite },
             h3: { color: tufteWhite },
@@ -25,9 +25,18 @@ export default {
             p: { color: tufteWhite },
             i: { color: tufteWhite },
             strong: { color: tufteWhite },
-            blockquote: { color: tufteWhite },
             span: { color: tufteWhite },
-            a: { color: tufteWhite, '&:hover': { color: 'hsl(50, 90%, 67%)',  }, transition: 'color 0.3s ease, transform 0.3s ease'},
+            a: {
+              color: tufteWhite,
+              '&:hover': {
+                color: 'hsl(50, 90%, 67%)',
+                span: {
+                  color: 'hsl(50, 90%, 67%)',
+                  transition: 'color 0.3s ease, transform 0.3s ease'
+                }
+              },
+              transition: 'color 0.3s ease, transform 0.3s ease'
+            },
             hr: { 'border-color': tufteWhite }
           }
         }
