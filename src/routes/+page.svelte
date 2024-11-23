@@ -1,13 +1,13 @@
 <script lang="ts">
-	import PostsV2 from '$lib/components/PostsV2.svelte';
+	import Readme from '$lib/md/readme.svx';
+	import Posts from '$lib/components/Posts.svelte';
 	import Quote from '$lib/components/Quote.svelte';
 	import { getMdFiles } from '$lib/util';
 
-	const rawArticles = getMdFiles(import.meta.glob('../lib/md/articles/*', { eager: true }));
+	const articles = getMdFiles(import.meta.glob('../lib/md/articles/*', { eager: true }));
 </script>
 
-<Quote></Quote>
-
-{#if rawArticles}
-	<PostsV2 posts={rawArticles} pathPrefix="/words/articles"></PostsV2>
+<Readme />
+{#if articles}
+	<Posts posts={articles} pathPrefix="/words/articles"></Posts>
 {/if}

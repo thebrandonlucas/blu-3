@@ -1,41 +1,36 @@
 <script lang="ts">
-	import type { MarkdownFileData, MarkdownFiles, PathMetadata } from '$lib/types';
-	import { getMdFiles } from '$lib/util';
-	import { onMount } from 'svelte';
+	import type { MarkdownFileMetadata } from '$lib/types';
+	import { formatDate, getFilename } from '$lib/util';
 
 	let {
-		numVisible = undefined,
-		directory = undefined
+		posts,
+		pathPrefix
+		// TODO:: sortBy descending on specified key (date by default)
+		//sortBy = 'descending'
 	}: {
-		numVisible: number | undefined;
-		directory: PathMetadata | undefined;
+		posts: MarkdownFileMetadata[];
+		pathPrefix: string;
+		//sortBy: 'descending' | 'ascending';
 	} = $props();
 
-	let mdFiles: MarkdownFiles | undefined = $state(undefined);
-	onMount(async () => {
-		const files = getMdFiles(directory);
-		if (files) {
-			mdFiles = await Promise.all(
-				files.map(async ({ path, metadata }): Promise<MarkdownFileData> => {
-					const file = await import(path);
-					return {
-						path,
-						metadata,
-						file
-					};
-				})
-			);
-		}
-	});
+	const files = $state(
+		posts
+			?.map(({ path, metadata }) => {
+				const name = getFilename({ path });
+				return { ...metadata, name, date: formatDate(metadata.date) };
+			})
+			.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+	);
 </script>
 
-{#if mdFiles}
-	{#each mdFiles as f, i}
-		{#if i < (numVisible || Infinity)}
-			<f.file.default></f.file.default>
-		{/if}
+{#if files}
+	{#each files as f}
+		<div class="flex flex-col gap-4">
+			<div>
+				<a href={`${pathPrefix}/${f.name}`}>
+					<span>{f.date}</span>: <span>{f.title}</span>
+				</a>
+			</div>
+		</div>
 	{/each}
-{:else}
-	<!-- TODO: do we need a loading spinner? -->
-	no files
 {/if}

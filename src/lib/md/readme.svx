@@ -1,8 +1,16 @@
 ---
-title: readme
-author: Brandon Lucas 
+title: Welcome
 date: 2021-01-01
+popularity: 10
+completeness: 4
+tags: []
 ---
+
+<script lang="ts">
+  import Quote from '$lib/components/Quote.svelte'
+</script>
+
+<Quote></Quote>
 
 Welcome! I'm __Brandon Lucas__. I'm interested in [Bitcoin](https://bitcoin.org/en/) and other [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) and am usually building things, but also love to read and write when I can.
 
@@ -14,10 +22,4 @@ On this site you'll find:
 
 Here's a preview of some of the main stuff:
 
-### Articles
-[Voltage for Developers - Bitcoin Core Mutinynet]()
-[Payjoin for a Better Bitcoin Future]()
-[Micropayments and the Lightning Network]()
-
-### Blog Posts
 

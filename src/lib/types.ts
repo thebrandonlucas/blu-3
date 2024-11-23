@@ -1,8 +1,10 @@
 export type Metadata = {
   title: string;
-  author: string;
   date: string; // ISO
-  description: string;
+  description?: string;
+  tags?: [];
+  popularity?: number; // 1-10 
+  completeness?: number; // 1-10
 };
 
 export type MarkdownFileData = {

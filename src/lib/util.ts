@@ -23,3 +23,9 @@ export function getFilename({ path, withExtension = false }: { path: string, wit
   const prefixStripped = path.split('/').at(-1);
   return withExtension ? prefixStripped : prefixStripped?.replace('.md', '')
 }
+
+export function formatDate(date: string) {
+  return date.split('T')[0];
+}
+
+
