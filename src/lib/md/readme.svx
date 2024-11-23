@@ -14,18 +14,27 @@ tags: []
   let { articles , blog }: { articles: MarkdownFileMetadata[], blog: MarkdownFileMetadata[] } = $props();
 </script>
 
+<div class="flex justify-center mt-4 mb-4">
+  <h1 >blu</h1>
+</div>
+
+<div class="text-center">
+  Welcome! I'm <b>B</b>randon <b>Lu</b>cas. Checkout <a href="/words">words</a> for articles, blog posts, quotes, etc., 
+  <a href="/work">work</a> for non-writing projects, 
+  or <a href="about">about</a> to learn more about me.
+</div>
+
+
+--- 
+
+<Posts posts={articles} sectionTitle="Latest Articles" pathPrefix="/words/articles"></Posts>
+
+---
+
+<Posts posts={blog} sectionTitle="Latest Blog Posts" pathPrefix="/words/blog"></Posts>
+
+---
+
+## A Quote:
+
 <Quote></Quote>
-
-Welcome! I'm __Brandon Lucas__. I'm interested in [Bitcoin](https://bitcoin.org/en/) and other [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) and am usually building things, but also love to read and write when I can.
-
-On this site you'll find:
-
-- [__Words__](/words): A collection of longer-form articles, shorter-form blogs, quotes I like, books I recommend (and perhaps some reviews later), rough "sketches" of thoughts or ideas, websites, tools, and applications I like, etc. Here be the "meat" of the site.
-- [__Work__](/work): Projects I've worked on or am still working on, primarily a collection of open source contributions.
-- [__About__](/about): Learn a bit more about me, contact info, donation portal, etc.
-
-Here's a preview of some of the main stuff:
-
-  
-<Posts posts={articles} sectionTitle="Articles" pathPrefix="/words/articles"></Posts>
-<Posts posts={blog} sectionTitle="Articles" pathPrefix="/words/blog"></Posts>
