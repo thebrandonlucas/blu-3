@@ -11,6 +11,8 @@ export type MarkdownFileData = {
   file: MarkdownFile;
 };
 
+export type MarkdownFileMetadata = Omit<MarkdownFileData, 'file'>
+
 export type MarkdownFiles = MarkdownFileData[];
 
 export type PathMetadata = Record<string, { metadata: Metadata }>

@@ -17,7 +17,6 @@
 		if (files) {
 			mdFiles = await Promise.all(
 				files.map(async ({ path, metadata }): Promise<MarkdownFileData> => {
-					console.log({ path });
 					const file = await import(path);
 					return {
 						path,

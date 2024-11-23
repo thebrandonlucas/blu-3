@@ -1,18 +1,13 @@
 <script lang="ts">
-	import Posts from '$lib/components/Posts.svelte';
+	import PostsV2 from '$lib/components/PostsV2.svelte';
 	import Quote from '$lib/components/Quote.svelte';
-	import { onMount } from 'svelte';
+	import { getMdFiles } from '$lib/util';
 
-	// First value in array is filename, second is metadata
-
-	const rawArticles = import.meta.glob('../lib/md/articles/*', { eager: true });
+	const rawArticles = getMdFiles(import.meta.glob('../lib/md/articles/*', { eager: true }));
 </script>
 
 <Quote></Quote>
 
-<Posts numVisible={5} directory={rawArticles}></Posts>
-<!-- {#each Object.entries(mdFiles) as [other, f]}
-	{JSON.stringify(other)}
-	<svelte:component this={f} />
-{/each}
--->
+{#if rawArticles}
+	<PostsV2 posts={rawArticles} pathPrefix="/words/articles"></PostsV2>
+{/if}

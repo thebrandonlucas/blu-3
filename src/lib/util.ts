@@ -1,6 +1,6 @@
-import type { PathMetadata } from "./types";
+import type { MarkdownFileMetadata, PathMetadata } from "./types";
 
-export function getMdFiles(d?: PathMetadata) {
+export function getMdFiles(d?: PathMetadata): MarkdownFileMetadata[] | undefined {
   if (d) {
     return Object.entries(d).map(([path, { metadata }]) => ({
       path: makeRelativeMdPath(path),
@@ -8,6 +8,7 @@ export function getMdFiles(d?: PathMetadata) {
     }));
   }
 }
+
 // Replace the relative path to the md files being passed in to the relative path
 // of the md folder to the current component so that we can import from here
 //
