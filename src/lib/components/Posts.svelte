@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { MarkdownFileData, MarkdownFiles, MetaGlobImport } from '$lib/types';
+	import type { MarkdownFileData, MarkdownFiles, PathMetadata } from '$lib/types';
 	import { getMdFiles } from '$lib/util';
 	import { onMount } from 'svelte';
 
@@ -8,7 +8,7 @@
 		directory = undefined
 	}: {
 		numVisible: number | undefined;
-		directory: MetaGlobImport | undefined;
+		directory: PathMetadata | undefined;
 	} = $props();
 
 	let mdFiles: MarkdownFiles | undefined = $state(undefined);
@@ -17,6 +17,7 @@
 		if (files) {
 			mdFiles = await Promise.all(
 				files.map(async ({ path, metadata }): Promise<MarkdownFileData> => {
+					console.log({ path });
 					const file = await import(path);
 					return {
 						path,
