@@ -1,11 +1,6 @@
 <script lang="ts">
-	import type {
-		MarkdownFileData,
-		MarkdownFiles,
-		Metadata,
-		MetaGlobImport,
-		PathMetadata
-	} from '$lib/types';
+	import type { MarkdownFileData, MarkdownFiles, MetaGlobImport } from '$lib/types';
+	import { getMdFiles } from '$lib/util';
 	import { onMount } from 'svelte';
 
 	let {
@@ -15,25 +10,6 @@
 		numVisible: number | undefined;
 		directory: MetaGlobImport | undefined;
 	} = $props();
-
-	// Replace the relative path to the md files being passed in to the relative path
-	// of the md folder to the current component so that we can import from here
-	//
-	// - strip anything before the 'md/'
-	// - concatenate with the current relative path to the '.md' file
-	function makeRelativeMdPath(path: string, currentMdDir = '../') {
-		const prefixStripped = path.replace(/.*?(md\/)/, '$1');
-		return `${currentMdDir}${prefixStripped}`;
-	}
-
-	function getMdFiles(d?: MetaGlobImport): PathMetadata[] | undefined {
-		if (d) {
-			return Object.entries<Metadata>(d).map(([path, metadata]) => ({
-				path: makeRelativeMdPath(path),
-				metadata
-			}));
-		}
-	}
 
 	let mdFiles: MarkdownFiles | undefined = $state(undefined);
 	onMount(async () => {
