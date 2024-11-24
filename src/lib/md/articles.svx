@@ -1,9 +1,6 @@
 ---
 title: Welcome
 date: 2021-01-01
-popularity: 10
-completeness: 4
-tags: []
 ---
 
 <script lang="ts">
@@ -32,9 +29,3 @@ tags: []
 ---
 
 <Posts posts={blog} sectionTitle="Latest Blog Posts" pathPrefix="/words/blog"></Posts>
-
----
-
-## A Quote:
-
-<Quote></Quote>

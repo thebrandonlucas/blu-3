@@ -43,7 +43,8 @@
 			</div>
 		{/if}
 	{/each}
-
-	<br />
-	<a class="pt-8" href={pathPrefix}><i>See more</i></a>
+	{#if files.length > numShown}
+		<br />
+		<a class="pt-8" href={pathPrefix}><i>See more</i></a>
+	{/if}
 {/if}

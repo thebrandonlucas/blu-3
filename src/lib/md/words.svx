@@ -1,0 +1,28 @@
+---
+title: Words 
+date: 2024-23-11
+---
+
+<script lang="ts">
+  import Quote from '$lib/components/Quote.svelte';
+  import Posts from '$lib/components/Posts.svelte';
+  import type { MarkdownFileMetadata } from '$lib/types';
+
+  let { articles , blog }: { articles: MarkdownFileMetadata[], blog: MarkdownFileMetadata[] } = $props();
+</script>
+
+<div class="flex justify-center mt-4 mb-4">
+  <h1>Words</h1>
+</div>
+
+Different-quality/effort level posts. Articles are generally the longest/most thought out, blogs are more freeform,
+sketches will generally be fairly rough/unedited/subject to change. I keep a list of quotes I like, and books
+I have enjoyed/am currently enjoying.
+
+--- 
+
+<Posts posts={articles} sectionTitle="Latest Articles" pathPrefix="/words/articles"></Posts>
+
+---
+
+<Posts posts={blog} sectionTitle="Latest Blog Posts" pathPrefix="/words/blog"></Posts>
