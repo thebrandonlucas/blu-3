@@ -1,9 +1,6 @@
 <script lang="ts">
 	import Home from '$lib/md/home.svx';
-	import { getMdFiles } from '$lib/util';
-
-	const articles = getMdFiles(import.meta.glob('../lib/md/articles/*', { eager: true }));
-	const blog = getMdFiles(import.meta.glob('../lib/md/blog/*', { eager: true }));
+	import { articles, blog } from '$lib/store';
 </script>
 
-<Home {articles} {blog} />
+<Home articles={$articles} blog={$blog} />
