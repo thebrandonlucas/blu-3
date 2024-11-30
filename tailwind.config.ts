@@ -30,10 +30,11 @@ export default {
               color: tufteWhite,
               '&:hover': {
                 color: 'hsl(50, 90%, 67%)',
-                span: {
+                '*': {
                   color: 'hsl(50, 90%, 67%)',
                   transition: 'color 0.3s ease, transform 0.3s ease'
-                }
+                },
+
               },
               transition: 'color 0.3s ease, transform 0.3s ease'
             },
