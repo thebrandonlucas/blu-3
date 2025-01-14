@@ -7,20 +7,22 @@ date: 2024-23-11
   import Quote from '$lib/components/Quote.svelte';
   import Posts from '$lib/components/Posts.svelte';
   import type { MarkdownFileMetadata } from '$lib/types';
+  import SectionHeader from '$lib/components/SectionHeader.svelte'
 
   let { articles , blog }: { articles: MarkdownFileMetadata[], blog: MarkdownFileMetadata[] } = $props();
 </script>
 
-<div class="flex justify-center mt-4 mb-4">
-  <h1 >blu</h1>
-</div>
+<div class="flex flex-col gap-8">
+  <div class="flex justify-center">
+    <SectionHeader text="blu" />
+  </div>
 
-<div class="text-center">
-  Welcome! I'm <b>B</b>randon <b>Lu</b>cas. Checkout <a href="/words">words</a> for articles, blog posts, quotes, etc., 
-  <a href="/work">work</a> for non-writing projects, 
-  or <a href="about">about</a> to learn more about me.
+  <div style="text-align: center;">
+    Welcome! I'm <b>B</b>randon <b>Lu</b>cas. Checkout <a href="/words">words</a> for articles, blog posts, quotes, etc., 
+    <a href="/work">work</a> for non-writing projects, 
+    or <a href="about">about</a> to learn more about me.
+  </div>
 </div>
-
 
 --- 
 
