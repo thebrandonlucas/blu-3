@@ -9,6 +9,8 @@ date: 2024-23-11
   import type { MarkdownFileMetadata } from '$lib/types';
 
   let { articles , blog }: { articles: MarkdownFileMetadata[], blog: MarkdownFileMetadata[] } = $props();
+
+  // TODO: Add sketches/journal
 </script>
 
 <div class="flex justify-center mt-4 mb-4">

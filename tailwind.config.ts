@@ -38,7 +38,10 @@ export default {
               },
               transition: 'color 0.3s ease, transform 0.3s ease'
             },
-            hr: { 'border-color': tufteWhite }
+            hr: { 'border-color': tufteWhite },
+            code: { color: tufteWhite },
+            "code::before": { content: '""' },
+            "code::after": { content: '""' },
           }
         }
       }

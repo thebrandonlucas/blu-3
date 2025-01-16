@@ -7,8 +7,8 @@
 
 	let { children } = $props();
 
-	$articles = getMdFiles(import.meta.glob('../lib/md/articles/*', { eager: true })) || [];
-	$blog = getMdFiles(import.meta.glob('../lib/md/blog/*', { eager: true })) || [];
+	$articles = getMdFiles(import.meta.glob('../lib/md/articles/*.md', { eager: true })) || [];
+	$blog = getMdFiles(import.meta.glob('../lib/md/blog/*.md', { eager: true })) || [];
 </script>
 
 <main class="prose prose-2xl mx-auto my-4 flex flex-col gap-12 py-4">

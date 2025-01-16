@@ -2,14 +2,14 @@
 	import { onMount } from 'svelte';
 	import { formatDate } from '$lib/util';
 
-	let { slug }: { slug: string } = $props();
+	let { slug, type }: { slug: string; type: 'blog' | 'articles' } = $props();
 
 	// eslint-disable-next-line no-undef
 	let md: MarkdownFile | undefined = $state(undefined);
 	let date: string | undefined = $state(undefined);
 
 	onMount(async () => {
-		md = await import(`$lib/md/blog/${slug}.md`);
+		md = await import(`$lib/md/${type}/${slug}.md`);
 		if (md) {
 			date = formatDate(md.metadata.date);
 		}
@@ -18,7 +18,7 @@
 
 {#if md}
 	<div class="flex flex-col items-center">
-		<h2>{md?.metadata.title}</h2>
+		<h2 class="text-center">{md?.metadata.title}</h2>
 		<i>{date}</i>
 	</div>
 	<md.default></md.default>

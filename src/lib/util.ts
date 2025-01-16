@@ -2,10 +2,13 @@ import type { MarkdownFileMetadata, PathMetadata } from "./types";
 
 export function getMdFiles(d?: PathMetadata): MarkdownFileMetadata[] | undefined {
   if (d) {
-    return Object.entries(d).map(([path, { metadata }]) => ({
-      path: makeRelativeMdPath(path),
-      metadata
-    }));
+    return Object.entries(d).map(([path, { metadata }]) => {
+      console.log({ path, metadata })
+      return {
+        path: makeRelativeMdPath(path),
+        metadata
+      }
+    });
   }
 }
 

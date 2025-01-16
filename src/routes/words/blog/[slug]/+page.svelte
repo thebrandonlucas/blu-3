@@ -3,4 +3,4 @@
 	import Post from '$lib/components/Post.svelte';
 </script>
 
-<Post slug={$page.params.slug} />
+<Post slug={$page.params.slug} type="blog" />
