@@ -13,6 +13,7 @@
 		<a href="/words/quotes">Quotes</a>
 	{:else if $page.route.id?.endsWith('work')}
 		<a href="/work/projects">Projects</a>
+		<a href="/work/other">Other</a>
 	{:else if $page.route.id?.endsWith('about')}
 		<a href="/about/contact">Contact</a>
 	{/if}
