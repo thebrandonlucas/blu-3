@@ -24,10 +24,11 @@ date: 2024-23-11
   </div>
 </div>
 
+<!-- TODO: add "latest quote" here -->
 --- 
 
-<Posts posts={articles} sectionTitle="Latest Articles" pathPrefix="/words/articles"></Posts>
+<Posts smallTitle posts={articles} sectionTitle="Latest Articles" pathPrefix="/words/articles"></Posts>
 
 ---
 
-<Posts posts={blog} sectionTitle="Latest Blog Posts" pathPrefix="/words/blog"></Posts>
+<Posts smallTitle posts={blog} sectionTitle="Latest Blog Posts" pathPrefix="/words/blog"></Posts>

@@ -6,7 +6,8 @@
 		posts,
 		pathPrefix,
 		sectionTitle,
-		numShown = 3
+		numShown = 3,
+		smallTitle = false
 		// TODO:: sortBy descending on specified key (date by default)
 		//sortBy = 'descending'
 	}: {
@@ -14,6 +15,7 @@
 		pathPrefix: string;
 		sectionTitle?: string;
 		numShown?: number;
+		smallTitle?: boolean;
 		//sortBy: 'descending' | 'ascending';
 	} = $props();
 
@@ -30,7 +32,11 @@
 
 {#if files}
 	{#if sectionTitle}
-		<h2 class="my-8">{sectionTitle}</h2>
+		{#if smallTitle}
+			<h2 class="my-8">{sectionTitle}</h2>
+		{:else}
+			<h1 class="my-8">{sectionTitle}</h1>
+		{/if}
 	{/if}
 	{#each files as f, i}
 		{#if i < numShown}
