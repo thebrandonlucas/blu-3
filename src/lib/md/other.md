@@ -18,7 +18,7 @@ _April 21, 2023-24_
 
 I served as mentor and judge during the 2023 and 2024 MIT Bitcoin Hackathons.
 
-The winning project for the Bitcoin & Lightning track, [Lightning Bounties](https://www.lightningbounties.com/), has formed into a very cool company at the crossroads of machine learning and Bitcoin. Their idea is to provide an incentive for open source development by rewarding contributors in Bitcoin for valid contributions, using crowdfunding to collect revenue for bounties. Invalid contributions are discouraged through AI-assisted filtering, saving maintainers' time. A sorely needed solution in the FOSS world.
+I'm particularly proud of the winning project for the Bitcoin & Lightning track in 2024, [Lightning Bounties](https://www.lightningbounties.com/), which has formed into a very cool company at the crossroads of machine learning and Bitcoin. Their idea is to provide an incentive for open source development by rewarding contributors in Bitcoin for valid contributions, using crowdfunding to collect revenue for bounties. Invalid contributions are discouraged through AI-assisted filtering, saving maintainers' time. A sorely needed solution in the FOSS world.
 
 ---
 
