@@ -23,10 +23,12 @@
 		posts
 			?.map(({ path, metadata }) => {
 				const name = getFilename({ path });
-				return { ...metadata, name, date: formatDate(metadata.date) };
+				return { ...metadata, name, date: metadata.date ? formatDate(metadata.date) : null };
 			})
 			// sort descending
-			.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+			.sort((a, b) =>
+				a.date && b.date ? new Date(b.date).getTime() - new Date(a.date).getTime() : 0
+			)
 	);
 </script>
 
@@ -43,7 +45,10 @@
 			<div class="flex flex-col gap-4">
 				<div>
 					<a href={`${pathPrefix}/${f.name}`}>
-						<span>{f.date}</span>: <span>{f.title}</span>
+						{#if f.date}
+							<span>{f.date}</span>:
+						{/if}
+						<span>{f.title}</span>
 					</a>
 				</div>
 			</div>

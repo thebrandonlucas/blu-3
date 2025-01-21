@@ -4,8 +4,6 @@
   import type { MarkdownFileMetadata } from '$lib/types';
 
   let { articles , blog }: { articles: MarkdownFileMetadata[], blog: MarkdownFileMetadata[] } = $props();
-
-  // TODO: Add sketches/journal
 </script>
 
 Different-quality/effort level posts. Articles are generally the longest/most thought out, blogs are more freeform,

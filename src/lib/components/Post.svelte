@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { formatDate } from '$lib/util';
 
-	let { slug, type }: { slug: string; type: 'blog' | 'articles' } = $props();
+	let { slug, type }: { slug: string; type: 'blog' | 'articles' | 'journal' } = $props();
 
 	// eslint-disable-next-line no-undef
 	let md: MarkdownFile | undefined = $state(undefined);
