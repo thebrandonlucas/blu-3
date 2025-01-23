@@ -4,6 +4,17 @@ I'm attempting to keep a list of quotes I find interesting, along with their sou
 
 ---
 
+January 23, 2025
+
+> Shall I be carried to the skies,
+> On flowery beds of ease,
+> While others fought to win the prize,
+> And sailed through bloody seas?
+
+- Laura Ingalls Wilder, _Little House in the Big Woods_, p. 96
+
+---
+
 September 17, 2024
 
 >    Only a few prefer liberty – the majority seek nothing more than fair masters
