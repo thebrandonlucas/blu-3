@@ -1,5 +1,5 @@
 ---
-title: Toward a Better Personal Website
+title: Attempting to Build a Quality Personal Website
 description: A more thoughtful approach to personal site development
 date: 2025-01-22
 ---
@@ -46,19 +46,19 @@ They even have a marketplace of templates and integrations, and given their open
 
 I considered working on this myself, but there is significant overhead that I just didn't and don't have the time (for now) to take up.
 
-For awhile, the lack of bitcoin-based payment options was worth it, and I paid for a full year's subscription even though I wasn't sure if I'd use it for long (I didn't, but I consider it a tithe to open-source software).
+For awhile, the lack of bitcoin-based payment options was worth it, and I paid for a full year's subscription even though I wasn't sure if I'd use it for long (I didn't, but I consider it a tithe to open-source software). I loved the writing and publishing experience, which was extremely simple, and there were a good number of default themes to choose from. However, none that I _loved_, and I found myself longing for more customizability. For most bloggers who can pay a few bucks a month or have the wherewithal to self-host, I would definitely recommend Ghost. 
 
+### Discoveries
+
+My website was hosted on Ghost for a couple months, and it actually allowed me to write an article or two and post a quote here and there, and I was starting to give up on monetizing it (was I ever really doing it for that anyway?). But then I started going down more of a rabbit hole. And it's a rabbit hole I'd never have started going down were it not for the influence of the Bitcoin community. 
 
 
 ---
 
-Developing a personal website can be as much or little work as its' creator decides, depending on whether they want more control over things like where it's hosted, the layout of the site, price, and features. Most independent bloggers opt for out-of-the-box solutions, the most popular of which these days seems to be [Substack](https://substack.com/), and for good reason. It's simple and comes with the things most bloggers want and doesn't require much work from them other than the writing itself. A year or two ago, my personal website was hosted on [Netlify](), written in [Sveltekit](), and Netlify was connected to Github so that it auto-deployed when pushing any change. That was nice, but visiting it was extremely slow (Netlify does cold starts; the server had to spin up if the website was infrequently visited).
-
-I spent the next year ideating on different ways to build a site in my spare time, and got more hands-on experience with the different tradeoffs of each. Most importantly, however, I ran into a few influences that led me to rethink my priorities and philosophy for how I should build my personal website, and in truth, for how I should build things in general
-
 - Luke Smith
 - Gwern
 - Zig creator
+- Aaron Schwartz
 
 
 ### On the section explaining why bitcoin
