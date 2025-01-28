@@ -50,7 +50,7 @@ For awhile, the lack of bitcoin-based payment options was worth it, and I paid f
 
 ### Discoveries
 
-My website was hosted on Ghost for a couple months, and it actually allowed me to write an article or two and post a quote here and there, and I was starting to give up on monetizing it (was I ever really doing it for that anyway?). But then I started going down more of a rabbit hole. And it's a rabbit hole I'd never have started going down were it not for the influence of the Bitcoin community. 
+My website was hosted on Ghost for a couple months, and it actually allowed me to write an article or two and post a quote here and there, and I was starting to give up on monetizing it (was I ever really doing it for that anyway?). But then I started going down more of a rabbit hole. And it's a rabbit hole I'd never have started going down were it not for the influence of the Bitcoin community in the first place. Once you submit that software should be Free and Open Source, as the Bitcoin community does, a hundred divergences from traditional thoughts on software creation spring. It's a natural logical step to assume that if software should be open source, it should and will be completely own-able and modifiable by its' users. If it is owned by its' users, it should be private and they should be in control of their data. If software and the data users store in it is freely modifiable, own-able, private, etc., then they should And so, we have , [Luke Smith](), 
 
 
 ---
@@ -59,6 +59,8 @@ My website was hosted on Ghost for a couple months, and it actually allowed me t
 - Gwern
 - Zig creator
 - Aaron Schwartz
+- Visakan Veerasamy
+- Henrik Karlsson
 
 
 ### On the section explaining why bitcoin
