@@ -1,7 +1,7 @@
 ---
 title: Toward A Better Site
 description: A more thoughtful approach to personal site development
-date: 2025-01-22
+date: 2025-01-29
 ---
 
 > We shall not cease from exploration  
