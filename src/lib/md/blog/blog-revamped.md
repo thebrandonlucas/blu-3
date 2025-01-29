@@ -48,9 +48,32 @@ I considered working on this myself, but there is significant overhead that I ju
 
 For awhile, the lack of bitcoin-based payment options was worth it, and I paid for a full year's subscription even though I wasn't sure if I'd use it for long (I didn't, but I consider it a tithe to open-source software). I loved the writing and publishing experience, which was extremely simple, and there were a good number of default themes to choose from. However, none that I _loved_, and I found myself longing for more customizability. For most bloggers who can pay a few bucks a month or have the wherewithal to self-host, I would definitely recommend Ghost. 
 
-### Discoveries
+### Inspiration Draws From Disparate Sources
 
-My website was hosted on Ghost for a couple months, and it actually allowed me to write an article or two and post a quote here and there, and I was starting to give up on monetizing it (was I ever really doing it for that anyway?). But then I started going down more of a rabbit hole. And it's a rabbit hole I'd never have started going down were it not for the influence of the Bitcoin community in the first place. Once you submit that software should be Free and Open Source, as the Bitcoin community does, a hundred divergences from traditional thoughts on software creation spring. It's a natural logical step to assume that if software should be open source, it should and will be completely own-able and modifiable by its' users. If it is owned by its' users, it should be private and they should be in control of their data. If software and the data users store in it is freely modifiable, own-able, private, etc., then they should And so, we have , [Luke Smith](), 
+> Shall I tell you the secret of the true scholar? It is this: Every man I meet is my master in some point, and in that I learn of him.
+
+- [Ralph Waldo Emerson, _Greatness_](https://wist.info/emerson-ralph-waldo/65482/)
+
+My website was hosted on Ghost for a couple months, and it actually allowed me to write an article or two and post a quote here and there, and I was starting to give up on monetizing it (was I ever really doing it for that anyway?).
+
+But around this time I was coming into greater contact with online presences that helped me to think differently, and though they all differ radically in occupation, style, and personal beliefs, they share an energy for creating good things meant to _last_; a passion for thinking long-term and for following their hearts over easy money and fame. A desire to achieve greatness in some form or other, and to have the revenues of their considerable efforts paid in something deeper than cash.
+
+One of those I stumbled across was [Luke Smith](https://lukesmith.xyz/), a thoroughly original person, whose unique admixture of Twitter-like meme humor, dead-serious power usage of FOSS-only tech, deep historical, philosophical, and linguistic knowledge, and opinionated Christianity fascinated me, even if I didn't agree with many of his opinions and sometimes his style. It's rare to find a person occupying all those particular spheres simultaneously, particularly in technology. From him I learned to ask for more from my software, to seek and value the right to and practice of _ownership_, whether that's in owning your own land, owning your own money (bitcoin, being debt-free), or owning your own technology to the highest degree possible. He even [removed all credit card-based ways to donate to him](https://lukesmith.xyz/updates/retiring-fiat-donation-portal/) on his website, as they weren't in keeping with his principles. I used his tutorial website on becoming an [Internet Landlord](https://landchad.net/) by self-hosting a website on your own DNS, for example, to build and host the version of this site at the time of writing. Another thing that is important to him is to have technology be a _tool you use_, rather than you be _its' tool_. To that end, he helped encourage me to try to build and use software that will last, and focus less on the ephemeral. Not an easy pursuit in the software world, open source or otherwise!
+
+Another figure who influenced this blog is [Henrik Karlsson](https://www.henrikkarlsson.xyz/), whose article [_A blog post is a very long and complex search query to find fascinating people and make them route interesting stuff to your inbox_](https://www.henrikkarlsson.xyz/p/search-query) had a deep impact on me and the direction of my thinking about how a blog should be made. It is excellent, both the idea and the read.
+
+[Zig](https://ziglang.org/) creator Andrew Kelley, also comes to mind, whose article [Why We Can't Have Nice Things](https://andrewkelley.me/post/why-we-cant-have-nice-software.html) helped me realize the incredible waste that often goes into making products worse when money alone is the goal.
+
+[Visakan Veerasamy]()'s article is often 
+
+But the final major influence was [gwern.net](https://gwern.net/), whose beautiful and carefully crafted website design is matched by its rich content and elegant prose. Seriously, this blog is amazing!
+
+### history plays a role
+Studying history also gives a sense of wanting to create things that last. In one way, this is a paradoxical pursuit in the tech world — most things we do are constantly being outdated by something new that has come along. But in another sense, if you build the right things, then everything else gets built on top of that, and what you worked on could just be the bedrock of the future, instead of merely trampled underneath it.
+
+
+
+But then I started going down more of a rabbit hole. And it's a rabbit hole I'd never have started going down were it not for the influence of the Bitcoin community in the first place. Once you submit that software should be Free and Open Source, as the Bitcoin community does, a hundred divergences from traditional thoughts on software creation spring. It's a natural logical step to assume that if code is open to anyone to read and run, it should and will be completely own-able and modifiable by its' users. If it is owned by its' users, it should be private to them and they should be in control of their data. If software and the data users store in it is freely modifiable, own-able, private, etc., then they should And so, we have , [Luke Smith](), 
 
 
 ---
