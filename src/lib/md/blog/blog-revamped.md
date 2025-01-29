@@ -82,6 +82,6 @@ Before, building my own website was a cool thing to put on my resume. But this t
 
 ### What Now?
 
-My primary reason for building this site to document everything I do that I think might be of use to someone else (or my future self). I want something that I built myself and which I have full control over, whose format I have the freedom to modify or restructure at any time (which I couldn't do in my previous methods. I want something that allows me to publish articles, blogs, daily journals, quotes I find interesting, projects I'm working on, what have you, in as frictionless a manner as possible while still retaining maximum expressive possibilities. Which, in essence, means I have to build things myself, and that there will be a high up-front cost to doing so. 
+My primary reason for building this site is to document everything I do that I think might be of use to someone else (or my future self). I want something that I built myself and which I have full control over, whose format I have the freedom to modify or restructure at any time (which I couldn't do in my previous methods). I want something that allows me to publish articles, blogs, daily journals, quotes I find interesting, projects I'm working on, what have you, in as frictionless a manner as possible while still retaining maximum expressive possibilities. Which, in essence, means I have to build things myself, and that there will be a high up-front cost to doing so. 
 
 So be it!
