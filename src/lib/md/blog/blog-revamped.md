@@ -4,10 +4,10 @@ description: A more thoughtful approach to personal site development
 date: 2025-01-22
 ---
 
-> We shall not cease from exploration
-> And the end of all our exploring
-> Will be to arrive where we started
-> And know the place for the first time.
+> We shall not cease from exploration  
+And the end of all our exploring  
+Will be to arrive where we started  
+And know the place for the first time.  
 
 - [T.S. Eliot, from “Little Gidding,” Four Quartets. Originally published 1943.](https://www.columbia.edu/itc/history/winter/w3206/edit/tseliotlittlegidding.html)
 
@@ -58,34 +58,30 @@ My website was hosted on Ghost for a couple months, and it actually allowed me t
 
 But around this time I was coming into greater contact with online presences that helped me to think differently, and though they all differ radically in occupation, style, and personal beliefs, they share an energy for creating good things meant to _last_; a passion for thinking long-term and for following their hearts over easy money and fame. A desire to achieve greatness in some form or other, and to have the revenues of their considerable efforts paid in something deeper than cash.
 
-One of those I stumbled across was [Luke Smith](https://lukesmith.xyz/), a thoroughly original person, whose unique admixture of Twitter-like meme humor, dead-serious power usage of FOSS-only tech, deep historical, philosophical, and linguistic knowledge, and opinionated Christianity fascinated me, even if I didn't agree with many of his opinions and sometimes his style. It's rare to find a person occupying all those particular spheres simultaneously, particularly in technology. From him I learned to ask for more from my software, to seek and value the right to and practice of _ownership_, whether that's in owning your own land, owning your own money (bitcoin, being debt-free), or owning your own technology to the highest degree possible. He even [removed all credit card-based ways to donate to him](https://lukesmith.xyz/updates/retiring-fiat-donation-portal/) on his website, as they weren't in keeping with his principles. I used his tutorial website on becoming an [Internet Landlord](https://landchad.net/) by self-hosting a website on your own DNS, for example, to build and host the version of this site at the time of writing. Another thing that is important to him is to have technology be a _tool you use_, rather than you be _its' tool_. To that end, he helped encourage me to try to build and use software that will last, and focus less on the ephemeral. Not an easy pursuit in the software world, open source or otherwise!
+One of those I stumbled across was [Luke Smith](https://lukesmith.xyz/), a thoroughly original person, whose unique admixture of Twitter-like meme humor, dead-serious power usage of FOSS-only tech, deep historical, philosophical, and linguistic knowledge, and opinionated take on Christianity fascinated me, even if I didn't agree with many of his opinions and means of presenting that information. It's rare to find a person occupying all those particular spheres simultaneously, particularly in technology. From him I learned to ask for more from my software, to seek and value the right to and practice of _ownership_, whether that's in owning your own land, owning your own money (bitcoin, being debt-free), or owning your own technology to the highest degree possible. He even [removed all credit card-based ways to donate to him](https://lukesmith.xyz/updates/retiring-fiat-donation-portal/) on his website, as they weren't in keeping with his principles. I used his tutorial website on becoming an [Internet Landlord](https://landchad.net/) by self-hosting a website on your own DNS, for example, to build and host the version of this site at the time of writing. Another thing that is important to him is to have technology be a _tool you use_, rather than you be _its' tool_. To that end, he helped encourage me to try to build and use software that will last, and focus less on the ephemeral. Not an easy pursuit in the software world, open source or otherwise!
 
 Another figure who influenced this blog is [Henrik Karlsson](https://www.henrikkarlsson.xyz/), whose article [_A blog post is a very long and complex search query to find fascinating people and make them route interesting stuff to your inbox_](https://www.henrikkarlsson.xyz/p/search-query) had a deep impact on me and the direction of my thinking about how a blog should be made. It is excellent, both the idea and the read.
 
-[Zig](https://ziglang.org/) creator Andrew Kelley, also comes to mind, whose article [Why We Can't Have Nice Things](https://andrewkelley.me/post/why-we-cant-have-nice-software.html) helped me realize the incredible waste that often goes into making products worse when money alone is the goal.
+[Zig](https://ziglang.org/) creator Andrew Kelley, also comes to mind, whose article [_Why We Can't Have Nice Things_](https://andrewkelley.me/post/why-we-cant-have-nice-software.html) helped me realize the incredible waste that often goes into making products worse when money alone is the goal.
 
-[Visakan Veerasamy]()'s article is often 
+[Visakan Veerasamy](https://visakanv.com/)'s article [_We Were Voyagers_](https://visakanv.substack.com/p/we-were-voyagers) is also an amazing and deeply encouraging read, and while it didn't directly influence how I built this website, it further influenced the "do something useful to others with your life in a spirit of gratitude" approach I'm trying to take to life in general, and will have an effect on the prose and content of the site if nothing else.
 
-But the final major influence was [gwern.net](https://gwern.net/), whose beautiful and carefully crafted website design is matched by its rich content and elegant prose. Seriously, this blog is amazing!
+But the final major influence was [gwern.net](https://gwern.net/), whose beautiful and carefully crafted website design is matched by its rich content and elegant prose. It's filled with a hundred little features, optimizations, and design decisions that make it a joy to use. For example, it has custom [page previews](https://www.mediawiki.org/wiki/Page_Previews) which allow you to see a preview of where a link will take you when hovering over it. It has tables of contents and footnotes for each article, and the footnotes become sidenotes on wide screens for convenience. He takes the time to design artsy [dropcaps](https://en.wikipedia.org/wiki/Initial) for each article. And something I found very interesting that I've never seen before, is his extensive use of local archives to fight against [linkrot](https://en.wikipedia.org/wiki/Link_rot), which is an important problem if we wish to preserve something of ourselves for the future. Read his [about page](https://gwern.net/about) for the site to learn more.
 
-### history plays a role
-Studying history also gives a sense of wanting to create things that last. In one way, this is a paradoxical pursuit in the tech world — most things we do are constantly being outdated by something new that has come along. But in another sense, if you build the right things, then everything else gets built on top of that, and what you worked on could just be the bedrock of the future, instead of merely trampled underneath it.
+All told, Gwern's website appears to me an exercise in how to create an optimal personal website for the long-run. He summarizes the fundamental question of building a site from the link above:
 
+> What does it take to present, for the long-term, complex, highly-referenced, link-intensive, long-form text online as effectively as possible, while conserving the reader’s time & attention?
 
+This version of my site, though still nascent, is based on a fuzzy mesh of these influences, and I will make the attempt to improve it and make it more resilient and higher quality over time.
 
-But then I started going down more of a rabbit hole. And it's a rabbit hole I'd never have started going down were it not for the influence of the Bitcoin community in the first place. Once you submit that software should be Free and Open Source, as the Bitcoin community does, a hundred divergences from traditional thoughts on software creation spring. It's a natural logical step to assume that if code is open to anyone to read and run, it should and will be completely own-able and modifiable by its' users. If it is owned by its' users, it should be private to them and they should be in control of their data. If software and the data users store in it is freely modifiable, own-able, private, etc., then they should And so, we have , [Luke Smith](), 
+### Knowing the Place for the First Time 
 
+Who was I kidding? I'm a _web developer_. I should've known from the beginning it would feel wrong to me to outsource that task, despite the work it may have taken. So after a year of exploration, I'm back at doing the same thing I did before — building the website in Sveltekit and MDsveX. But hopefully this time better, and having learned a lot about how to practically achieve that in addition to learning my own reasons for trying to do so in the first place.
 
----
+Before, building my own website was a cool thing to put on my resume. But this time I have my _reasons_.
 
-- Luke Smith
-- Gwern
-- Zig creator
-- Aaron Schwartz
-- Visakan Veerasamy
-- Henrik Karlsson
+### What Now?
 
+My primary reason for building this site to document everything I do that I think might be of use to someone else (or my future self). I want something that I built myself and which I have full control over, whose format I have the freedom to modify or restructure at any time (which I couldn't do in my previous methods. I want something that allows me to publish articles, blogs, daily journals, quotes I find interesting, projects I'm working on, what have you, in as frictionless a manner as possible while still retaining maximum expressive possibilities. Which, in essence, means I have to build things myself, and that there will be a high up-front cost to doing so. 
 
-### On the section explaining why bitcoin
-> Humans are distinguished from other species by our ability to work miracles. We call these miracles technology.
-> [Peter Thiel, _Zero to One_](https://www.goodreads.com/quotes/5500367-humans-are-distinguished-from-other-species-by-our-ability-to)
+So be it!
