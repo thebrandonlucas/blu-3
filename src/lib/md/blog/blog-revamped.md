@@ -1,5 +1,5 @@
 ---
-title: Attempting to Build a Quality Personal Website
+title: Toward A Better Site
 description: A more thoughtful approach to personal site development
 date: 2025-01-22
 ---
