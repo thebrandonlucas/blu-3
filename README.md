@@ -2,8 +2,8 @@
 
 ## Goals
 
-[x] Slick Typography
-[ ] RSS Feed
-[ ] Email Subscriptions
-[ ] Local Link Archives
-[ ] Link Previews
+- [x] Slick Typography
+- [ ] RSS Feed
+- [ ] Email Subscriptions
+- [ ] Local Link Archives
+- [ ] Link Previews
