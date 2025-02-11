@@ -27,8 +27,8 @@ date: 2024-23-11
 <!-- TODO: add "latest quote" here -->
 --- 
 
-<Posts smallTitle posts={articles} sectionTitle="Latest Articles" pathPrefix="/words/articles"></Posts>
+<Posts smallTitle posts={articles} sectionTitle="Latest Articles" pathPrefix="/words/articles" numShown={3}></Posts>
 
 ---
 
-<Posts smallTitle posts={blog} sectionTitle="Latest Blog Posts" pathPrefix="/words/blog"></Posts>
+<Posts smallTitle posts={blog} sectionTitle="Latest Blog Posts" pathPrefix="/words/blog" numShown={3}></Posts>

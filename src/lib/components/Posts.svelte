@@ -6,7 +6,7 @@
 		posts,
 		pathPrefix,
 		sectionTitle,
-		numShown = 3,
+		numShown,
 		smallTitle = false
 		// TODO:: sortBy descending on specified key (date by default)
 		//sortBy = 'descending'
@@ -41,7 +41,7 @@
 		{/if}
 	{/if}
 	{#each files as f, i}
-		{#if i < numShown}
+		{#if i < (numShown || Infinity)}
 			<div class="flex flex-col gap-4">
 				<div>
 					<a href={`${pathPrefix}/${f.name}`}>
@@ -54,7 +54,7 @@
 			</div>
 		{/if}
 	{/each}
-	{#if files.length > numShown}
+	{#if numShown && files.length > numShown}
 		<br />
 		<a class="pt-8" href={pathPrefix}><i>See more</i></a>
 	{/if}
