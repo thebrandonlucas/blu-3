@@ -71,7 +71,7 @@ if ! git diff --cached --quiet --exit-code; then
 
   # Push the changes to the remote repository
   echo "Pushing changes to remote origin..."
-  git push origin main
+  git push origin master
 
   # Check if the push command was successful.
   if [ $? -ne 0 ]; then
