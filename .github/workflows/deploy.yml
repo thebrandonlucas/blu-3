@@ -33,4 +33,3 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           source: 'build/*' # Or wherever your build output is
           target: '/var/www/blu'
-          rm: true
