@@ -31,6 +31,6 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
-          source: 'build/*/**' # Or wherever your build output is
+          source: 'build/*' # Or wherever your build output is
           target: '/var/www/blu'
-          rm: true
+          overwrite: true
