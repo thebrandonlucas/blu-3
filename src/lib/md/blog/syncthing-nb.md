@@ -1,14 +1,14 @@
 ---
-title: Open Source File Synchronization Across All Your Devices with Syncthing
+title: File Synchronization For All Your Devices with Syncthing
 description: How to synchronize files across many devices automagically
-date: 2025-02-01
+date: 2025-02-12
 ---
 
 I use the [TUI](https://en.wikipedia.org/wiki/Text-based_user_interface)-based tool [nb](https://github.com/xwmx/nb) for writing things. But I have a few problems:
   1) I use it on a lot of different computers and often want to add to notes that only exist on computer A while I'm on computer B.
-  2) Since everything I write on my website is in Markdown, I want to have the ability to have what I place in that notebook automatically update the website (or at least update it after a )
+  2) Since everything I write on my website is in Markdown, I want to have the ability to have what I place in that notebook automatically update the website (or at least update it after running some command)
 
-Solving Problem 1 will be the focus in this article. In a subsequent article, I plan to detail solving problem 2.
+Solving Problem 1 will be the focus in this article. In a subsequent post, I plan to detail solving problem 2.
 
 ## Requirements
 
@@ -47,4 +47,4 @@ Initially when using Syncthing I was confused about a few things (Should I use t
 
 ### Note For Obsidian Users 
 
-[Obsidian]() is an (unfortunately closed-source) note-taking app that pairs nicely with `nb`. I use `nb` on all my desk/laptop machines and use Obsidian on mobile since trying to use a terminal on mobile would be a terrible experience. After installing Syncthing-Fork on your mobile device and syncing the relevant folder, you can open that folder as your Vault in Obsidian. Before making any changes in Obsidian, however, you should disable a setting in Syncthing. Click on the synced folder, scroll down to "Watch for changes", and disable it. This will make it so changes to that synced directory will only attempt to sync changes to the others on an hourly basis. Obsidian saves files to disk extremely frequently, basically on every keystroke, and this caused Syncthing to behave strangely or simply not sync any changes made from Obsidian to the other devices. This is a bit unfortunate because there's a possibility that you could update the same file on your mobile device and another machine within that hour, causing a conflict. But fortunately Syncthing will save both versions of the file in a "conflict" file and you will have both versions so that there's no content loss.
+[Obsidian](https://obsidian.md/) is an (unfortunately closed-source) note-taking app that pairs nicely with `nb`. I use `nb` on all my desk/laptop machines and use Obsidian on mobile since trying to use a terminal on mobile would be a terrible experience. After installing Syncthing-Fork on your mobile device and syncing the relevant folder, you can open that folder as your Vault in Obsidian. Before making any changes in Obsidian, however, you should disable a setting in Syncthing. Click on the synced folder, scroll down to "Watch for changes", and disable it. This will make it so changes to that synced directory will only attempt to sync changes to the others on an hourly basis. Obsidian saves files to disk extremely frequently, basically on every keystroke, and this caused Syncthing to behave strangely or simply not sync any changes made from Obsidian to the other devices. This is a bit unfortunate because there's a possibility that you could update the same file on your mobile device and another machine within that hour, causing a conflict. But fortunately Syncthing will save both versions of the file in a "conflict" file and you will have both versions so that there's no content loss.
