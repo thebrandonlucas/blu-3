@@ -67,7 +67,7 @@ git add "$SITE_CODE_MD_DIR" "$SITE_CODE_MD_IMAGES_DIR"
 # Check if there are any changes to commit
 if ! git diff --cached --quiet --exit-code; then
   echo "Committing changes to git..."
-  git commit -m "Update markdown content from nb drafts"
+  git commit -m "Update content"
 
   # Push the changes to the remote repository
   echo "Pushing changes to remote origin..."
