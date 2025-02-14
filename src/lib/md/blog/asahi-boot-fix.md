@@ -1,6 +1,6 @@
 ---
-title: Hard Reset Asahi Linux After Boot Error Without Losing Data
-description: dnf update may cause a boot into a black screen. Here's how you can save your data.
+title: Hard Reset Asahi Linux After Boot Error and Data Backup
+description: `dnf update` may cause a boot into a black screen. Here's how you can reset your computer.
 date: 2025-02-12
 ---
 
