@@ -12,7 +12,7 @@
 	$journal = getMdFiles(import.meta.glob('../lib/md/journal/*.md', { eager: true })) || [];
 </script>
 
-<main class="prose prose-2xl mx-auto my-4 flex flex-col gap-12 py-4">
+<main class="prose prose-2xl mx-auto my-4 flex flex-col gap-12 p-4">
 	<div class="flex flex-col items-center">
 		<BreadCrumbs />
 		<Nav />
