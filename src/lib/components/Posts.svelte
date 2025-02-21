@@ -42,16 +42,16 @@
 	{/if}
 	{#each files as f, i}
 		{#if i < (numShown || Infinity)}
-			<div class="flex flex-col gap-4">
-				<div>
+			<ul class="m-0">
+				<li class="m-0">
 					<a href={`${pathPrefix}/${f.name}`}>
 						{#if f.date}
 							<span>{f.date}</span>:
 						{/if}
 						<span>{f.title}</span>
 					</a>
-				</div>
-			</div>
+				</li>
+			</ul>
 		{/if}
 	{/each}
 	{#if numShown && files.length > numShown}
